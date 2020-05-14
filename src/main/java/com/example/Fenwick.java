@@ -48,4 +48,8 @@ public class Fenwick {
     int get(int i) {
         return getCum(i) - getCum(i - 1);
     }
+    
+    int getCumBetween(int idx1, int idx2) {
+        return getCum(idx2) - getCum(idx1);
+    }
 }
